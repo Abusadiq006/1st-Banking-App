@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react-countup'
+import CountUp from 'react-countup'
 
 const AnimatedCounter = ({ amount }: { amount: number }) => {
   return (

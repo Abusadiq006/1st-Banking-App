@@ -1,4 +1,6 @@
 import React from 'react'
+import HeaderBox from '@/components/HeaderBox'
+import TotalBalanceBox from '@/components/TotalBalanceBox'
 
 const Home = () => {
   const loggedIn = { firstName: 'Muhammad' }
