@@ -2,12 +2,12 @@ import AnimatedCounter from "./AnimatedCounter"
 import DoughnutChart from "./DoughnutChart"
 
 const TotalBalanceBox = ({
-    account = [], totalBanks, totalCurrentBalance
+    accounts = [], totalBanks, totalCurrentBalance
 }: TotalBalanceProps) => {
   return (
     <section className='total-balance'>
         <div className='total-balance-chart'>
-            <{/* DoughnutChart */}>
+            {/* <DoughnutChart /> */}
         </div>
 
         <div className='flex flex-col gap-6'>

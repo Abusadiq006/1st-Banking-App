@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, IBM_Plex_Serif } from "next/font/google";
 import "./globals.css";
+import MobileNav from "@/components/MobileNav";
 
 const Inter = Inter({ subsets: ["latin"], variable: '--font-inter' })
 const ibmPlexSerif = IBM_Plex_Serif({
@@ -24,12 +25,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${inter.variable} ${ibmPlexSerif.variable} antialiased`}
-      >
-        {children}
-      </body>
-    </html>
+    <main className="flex h-screen w-full font-inter">
+      <Sidebar user={loggedIn}/>
+
+      <div className="flex size-full flex-col">
+        <div className="root-layout">
+          <Image src="/icons/logo.svg" width={30} 
+          height={30} alt="logo" />
+          <div>
+            <MobileNav user={loggedIn} />
+          </div>
+        </div>
+        
+      {children}
+      </div>
+
+
+    </main>
   );
 }
