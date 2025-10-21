@@ -11,7 +11,7 @@ const BankCard = ({ account, userName, showBalance =
                 <div>
                     <h1 className='text-16 font-semibold
                     text-white'>
-                        {account.name || userName}
+                        {account.name || userNa me}
                     </h1>
                     <p className='font-ibm-plex-serif font-black
                     text-white'>
@@ -48,11 +48,11 @@ const BankCard = ({ account, userName, showBalance =
                     alt="pay"
                 />
                 <Image
-                src="/icons/mastercard.svg"
-                width={45}
-                height={32}
-                alt="mastercard"
-                className="ml-5"
+                    src="/icons/mastercard.svg"
+                    width={45}
+                    height={32}
+                    alt="mastercard"
+                    className="ml-5"
                 />
             </div>
 

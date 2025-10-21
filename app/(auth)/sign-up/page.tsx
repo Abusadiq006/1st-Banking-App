@@ -1,8 +1,11 @@
 import React from 'react'
 
-const Signup = () => {
+const SignUp = () => {
   return (
-    <div>Signup</div>
+    <section className='flex-center size-full
+    max-sm:px-6'>
+      <AuthForm  type="sign-un"/>
+    </section>
   )
 }
 
