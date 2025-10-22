@@ -46,9 +46,9 @@ const Sidebar = ({ user }: SiderbarProps) => {
                                     })}
                                 />
                             </div>
-                            <p className={cn('sidebar-label',
+                            <p className={cn('sidebar-label', {
                                 '!text-white' :isActive
-                            )}>
+                            })}>
                                 {item.label}
                             </p>
                         </Link>
@@ -59,7 +59,7 @@ const Sidebar = ({ user }: SiderbarProps) => {
             USER 
         </nav>
 
-        FOOTER
+        <footer user={user}/>
     </section>
   )
 }

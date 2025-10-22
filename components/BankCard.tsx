@@ -11,7 +11,7 @@ const BankCard = ({ account, userName, showBalance =
                 <div>
                     <h1 className='text-16 font-semibold
                     text-white'>
-                        {account.name || userNa me}
+                        {userName}
                     </h1>
                     <p className='font-ibm-plex-serif font-black
                     text-white'>
