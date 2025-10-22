@@ -2,11 +2,10 @@ import React from 'react'
 import HeaderBox from '@/components/HeaderBox'
 import TotalBalanceBox from '@/components/TotalBalanceBox'
 import RightSidebar from '@/components/RightSidebar'
+import { getLoggedInUser } from '@/lib/actions/user.action'
 
 const Home = () => {
-  const loggedIn = { firstName: 'Muhammad', lastName: 'Sadiq',
-    email: 'abusadiq006@gmail.com'
-   }
+  const loggedIn = getLoggedInUser()
 
   return (
     <section className='home'>
